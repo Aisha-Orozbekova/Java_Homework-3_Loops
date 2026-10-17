@@ -3,7 +3,7 @@ public class TaskF {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int x = input.nextInt();
-        String reversed = " ";
+        String reversed = "";
 
         while (x > 0) {
             int digit = x % 10;
