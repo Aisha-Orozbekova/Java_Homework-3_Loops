@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class TaskN {
+    public static void main(String[] args) {
+        Scanner input = new Scanner (System.in);
+
+        int n = input.nextInt();
+        int zeros = 0;
+        int positive = 0;
+        int negative = 0;
+
+        for(int i = 0; i < n; i++) {
+            int x = input.nextInt();
+
+            if (x == 0) {
+                zeros++;
+            } else if  (x > 0) {
+                positive++;
+            } else {
+                negative++;
+            }
+        }
+        System.out.println(zeros + " " + positive + " " + negative);
+    }
+}
